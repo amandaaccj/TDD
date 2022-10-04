@@ -5,7 +5,7 @@ import com.example.tdd.repository.BookingRepository;
 import com.example.tdd.service.BookingService;
 import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,9 +21,7 @@ import java.time.LocalDate;
 @SpringBootTest
 public class BookingServiceClassTest {
 
-    @TestConfiguration
     static class BookingServiceTestConfiguration{
-
         @Bean
         public BookingService bookingService(){
             return new BookingService();
